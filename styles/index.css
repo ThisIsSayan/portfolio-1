@@ -1,0 +1,170 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #DAEBFB;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#sidebar{
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+    background-color: #91C2F3;
+}
+
+#nav-links a:hover {
+    -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5);
+}
+
+#nav-items a:hover {
+    background-color: #C8E1F9;
+}
+#content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+}
+
+#sidebar.active {
+    margin-left: -17rem;
+}
+
+#content.active {
+    width: 100%;
+    margin: 0;
+}
+
+@media (min-width: 901px)
+{
+    #toggle {
+        display: none;
+    }
+    #nav-2 {
+        display: none;
+    }
+    #footer {
+        display: none;
+    }
+}
+
+@media (max-width: 900px)
+{
+    #sidebar {
+        margin-left: -17rem;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+        margin: 0;
+    }
+    #content.active {
+        margin-left: 17rem;
+        width: calc(100% - 17rem);
+    }
+    #sidebar {
+        display: none;
+    }
+}
+
+#nav-2 {
+    background-color: #C8E0F9;
+}
+
+#nav-2 a:hover {
+    background-color: #91C2F3;
+}
+
+#home {
+    /* min-height: 100vh; */
+    /* background-color: blueviolet; */
+    background-color: #C8E1F9;
+}
+
+#home a:hover {
+    -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5);
+}
+
+#resume-btn {
+    background-color: #91C2F3;
+    border-color: #5AA3ED;
+}
+
+#resume-btn:hover {
+    -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5);
+}
+
+#about-me {
+    
+}
+
+#skills {
+    
+}
+
+#projects button:hover {
+    -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.2);
+    
+}
+
+#my-wall {
+    
+}
+
+#contact-me {
+    
+}
+
+
+#exp {
+    background-color: #C8E1F9;
+    /* border: white; */
+}
+
+#testimonials {
+    background-color: #C8E1F9;
+}
+#project-card {
+    background-color: #C8E1F9;
+    border-color: #5AA3ED;
+}
+
+#project-card-btn {
+    background-color: #91C2F3;
+    border-color: #5AA3ED;
+    
+}
+
+#divider {
+    border-top: 1px dashed #91C2F3;
+    
+}
+
+#progress {
+    background-color: #5AA3ED;
+    
+}
+.progress {
+    background-color: #91C2F3;
+}
