@@ -168,3 +168,11 @@ body {
 .progress {
     background-color: #91C2F3;
 }
+
+
+
+#contact-me-links a:hover {
+    -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5);
+}
